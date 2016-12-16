@@ -18,3 +18,4 @@
 
 - http://www.guiadasemana.com.br/porto-alegre/restaurantes/estabelecimento/tudo-pelo-social
 - http://ogourmet.net/blog/restaurantes/tudo-pelo-social/
+- Guia de Sobrevivência Gastronômica - Tudo Pelo Social - #GSGPOA: https://www.youtube.com/watch?v=Z-zuGysxjSA
