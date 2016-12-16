@@ -17,3 +17,4 @@
 ## Avaliações e comentários
 
 - http://www.guiadasemana.com.br/porto-alegre/restaurantes/estabelecimento/tudo-pelo-social
+- http://ogourmet.net/blog/restaurantes/tudo-pelo-social/
