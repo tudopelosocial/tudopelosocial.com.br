@@ -49,7 +49,30 @@ refrigerantes, suco de laranja e suco de uva.
 
 ------
 
-## Avaliações
+## Avaliações (4,5 de 5 estrelas)
+
+### Foursquare
+- 8,6/10
+- 1.151+ avaliações
+- Avalie você em https://pt.foursquare.com/v/tudo-pelo-social/4b58765bf964a520f75828e3
+
+### Comentários no google
+- 4,5/5
+- 433+ avaliações
+
+### Hagah
+- 4,8/10
+- 21+ avaliações
+- Avalie você em https://www.hagah.com.br/restaurante-tudo-pelo-social-joao-alfredo-448
+
+### Apontador
+- 5/5
+- 32+ avaliações
+- http://www.apontador.com.br/local/rs/porto_alegre/restaurantes/A5TJ4K22/tudo_pelo_social.html
+
+## O que falam da gente
+
+<!-- @todo ocultar da primeira versão avaliações; reavaliar  -->
 
 ### Rafael Dias dos S. da S. (Avaliado no google)
 
