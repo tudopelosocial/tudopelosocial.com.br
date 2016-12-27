@@ -24,6 +24,29 @@
       padding-top: 2em;
       padding-bottom: 2em;
     }
+    /* 
+      @TODO: melhorar responsivo das imagems que usam <img> em vez de usar como CSS background;
+         Veja https://gist.github.com/matthewcrist/3701206
+         Veja https://developer.mozilla.org/pt-BR/docs/Web/CSS/object-fit
+    */
+    
+    .img-center-tps {
+      /*
+      max-height: 90%;
+      max-width: 90%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 2px solid rgb(44, 44, 44);
+      */
+      object-fit: cover;
+      /* @todo resolve IE  */
+      width: 700px;
+      height: 200px;
+    }
   </style>
 </head>
 
@@ -91,8 +114,12 @@
       <h2 class="sr-only"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Local</h2>
 
       <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359">
+        <!--
         <img width="700" height="200" alt="Mapa do restaurante. Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23"
-          src="img/tps-google-maps-local.png" style="max-width: 100%">
+          src="img/tps-google-maps-local.png" class="img-center-tps" style="">
+        -->
+        <img width="700" height="200" alt="Mapa do restaurante. Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23"
+          src="img/tps-google-maps-local.png" class="img-responsive" style="">
 
         <div style="margin-top: 1em">
           <!--
