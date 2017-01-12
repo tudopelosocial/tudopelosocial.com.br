@@ -9,22 +9,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
   rel="stylesheet" media="screen">
+  <script type="text/javascript" src="main.js"></script>
+  <style type="text/css" href="style.css"></style>
   <style>
     /* Força largura máxima da página para algo mais simples de gerenciar enquanto página de espera */
     
+    header {
+      background-image: url("img/test.jpg");
+      background-size: 100%;
+      opacity: 0.7;
+      background-repeat: no-repeat;
+      font-style: 'Lato'
+    }
+
+    .odd {
+      background-color: #952720;
+      color: white;
+    }
+
+    .main-header {
+      background-color: #121212;
+      opacity: 0.8;
+      color: #fff;
+      width: 100%;
+      text-shadow: grey 0.2em 0.2em 0.2em;
+      font-size: 1.5em;
+      margin-top: 10%;
+      margin-bottom: 20%;
+    }
+
+    h1 {
+      font-size: 4em;
+    }
+
     body {
       font-style: 'Lato';
       text-align: center;
     }
 
-    li {
-      text-align: initial
+    .navbar {
+      margin-bottom: 0px;
+      width: 100%;
+    }
+
+    .bg-info {
+      padding: 1.5em;
+      background-color: #e3e5e3
     }
 
     .img-rounded {
       width: 80%;
     }
-    
+
+    .navbar-brand {
+      font-size: 1em;
+    }
+
     .footer-down {
       border-top: 1px solid #ccc;
       margin-top: 1em;
@@ -34,57 +74,45 @@
     }
 
     .content {
-      margin-top: 4em;
-      margin-bottom: 4em;
+      padding-top: 4em;
+      padding-bottom: 4em;
     }
 
-    .img-center-tps {
-      /*
-      max-height: 90%;
-      max-width: 90%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      border: 2px solid rgb(44, 44, 44);
-      */
-      object-fit: cover;
-      /* @todo resolve IE  */
-      width: 700px;
-      height: 200px;
+    @media (max-width: 768px) {
+      .main-header {
+        margin-top: 18%;
+        font-size: 1.2em;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/Restaurant">
- <!--  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">TUDO PELO SOCIAL</a>
+        <a class="navbar-brand" href="#">Tudo Pelo Social</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
         <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#referencias">Referências</a></li>
         <li><a href="#depoimentos">Depoimentos</a></li>
         <li><a href="#avaliacoes">Avaliações</a></li>
-        <li><a href="#referencias">Referencias</a></li>
-        <li><a href="#menu">Menu</a></li>
       </ul>
     </div>
-  </nav> -->
-  <header class="container">
-    <div class="jumbotron">
-      <div class="page-header">
-        <h1 itemprop="name">Restaurante<br> Tudo Pelo Social</h1>
+  </nav>
+  <header class="container-fluid no-padding">
+      <div class="main-header">
+        <h1 itemprop="name">TUDO PELO SOCIAL</h1>
+         <p> Fartos pratos de À La Minuta, filé à parmegiana, pizzas e buffet, em amplo
+        salão com 330 lugares de casa fundada em 1988.
+        </p>
       </div>
 
-      <p> Fartos pratos de À La Minuta, filé à parmegiana, pizzas e buffet, em amplo
-        salão com 330 lugares de casa fundada em 1988.
-      </p>
-    </div>
-    <div class="bg-info lead" style="padding: 1.5em"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Aberto de segunda
+    <div class="bg-info lead"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Aberto de segunda
       à sábado das 11h até 14h45min e 18h até 23h45min<br> e Domingo das 11h às 15h.
       Alguns feriados, como natal, está fechado.
     </div>
@@ -94,14 +122,13 @@
     <h2 class="sr-only">Menu</h2>
 
     <div id="pratos-mais-amados" class="content">
-      <hr>
       <h2><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Os pratos mais amados</h2>
       <p class="lead">
         O Tudo pelo Social serve no almoço bufê livre composto por 8 pratos quentes
         e 12 tipos de saladas.<br><em>Cardápio completo neste site em breve.</em>
       </p>
       <div class="row">
-        <div class="col-sm-2 col-xs-6"><img src="img/buffet.jpg" alt="Alaminuta" class="img-rounded img-responsive"></div>
+        <div class="col-sm-2 col-xs-6"><img src="img/comida.jpg" alt="Alaminuta" class="img-rounded img-responsive"></div>
         <div class="col-sm-2 col-xs-6">
           <h4><em>Alaminuta</em> (o mais pedido!)</h4>
           <ul class="list-unstyled">
@@ -142,8 +169,7 @@
       </p>
       <p><em>Cardápio completo em breve.</em></p>
     </div> -->
-    <div id="localizacao" class="content">
-      <hr> 
+    <div id="localizacao" class="container-fluid content no-padding odd">
       <h2 class="sr-only"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Local</h2>
       <div class="row">
         <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359">
@@ -159,10 +185,10 @@
                   <span class="btn btn-success" style="white-space: normal;">Use o Google para saber como chegar na <wbr>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
                 -->
                 <div class="col-sm-6 col-xs-6">
-                  <span class="btn btn-primary" style="white-space: normal;">Use o Google para saber como chegar na <br>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
+                  <span class="btn btn-default" style="white-space: normal;">Use o Google para saber como chegar na <br>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
                 </div>
                 <div class="col-sm-6 col-xs-6">
-                  <a href="tel:5132264405" class="btn btn-primary"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Ligue (51) 3226-4405</a>
+                  <a href="tel:5132264405" class="btn btn-default"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Ligue (51) 3226-4405</a>
                 </div>
               </div>
 
@@ -175,8 +201,7 @@
       -->
     </div>
 
-    <div id="referencias" class="content">
-      <hr>
+    <div id="referencias" class="content-fluid no-padding content">
       <h2><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Referências</h2>
       <div class="row">
         <div class="col-sm-4 col-xs-12">
@@ -197,9 +222,7 @@
       </div>
       
     </div>
-
-    <hr>
-    <div id="avaliacoes" class="container content">
+    <div id="avaliacoes" class="container-fluid no-padding content odd">
       <h2><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Avaliações
         (4,5/5)
       </h2>
@@ -239,13 +262,8 @@
       </div>
     </div>
 
-    <hr>
-    <div id="depoimentos">
+    <div id="depoimentos" class="container-fluid no-padding content">
       <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Depoimentos de clientes</h2>
-      <blockquote class="blockquote-reverse">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-      </blockquote>
       <blockquote class="blockquote-reverse">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
