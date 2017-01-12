@@ -31,7 +31,11 @@
       padding-top: 2em;
       padding-bottom: 2em;
       background-color: #333
+    }
 
+    .content {
+      margin-top: 4em;
+      margin-bottom: 4em;
     }
 
     .img-center-tps {
@@ -89,12 +93,12 @@
   <main class="container-fluid">
     <h2 class="sr-only">Menu</h2>
 
-    <hr>
-    <div id="pratos-mais-amados">
+    <div id="pratos-mais-amados" class="content">
+      <hr>
       <h2><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Os pratos mais amados</h2>
-      <p>
+      <p class="lead">
         O Tudo pelo Social serve no almoço bufê livre composto por 8 pratos quentes
-        e 12 tipos de saladas. <em>Cardápio completo neste site em breve.</em>
+        e 12 tipos de saladas.<br><em>Cardápio completo neste site em breve.</em>
       </p>
       <div class="row">
         <div class="col-sm-2 col-xs-6"><img src="img/buffet.jpg" alt="Alaminuta" class="img-rounded img-responsive"></div>
@@ -125,8 +129,6 @@
 
       </div>
     </div>
-
-    <hr>
     <!-- 
     <div id="cardapio-completo" style="display:none">
       <h3><span class="glyphicon glyphicon-cd" aria-hidden="true"></span> Cardápio completo</h3>
@@ -140,7 +142,8 @@
       </p>
       <p><em>Cardápio completo em breve.</em></p>
     </div> -->
-    <div id="localizacao">
+    <div id="localizacao" class="content">
+      <hr> 
       <h2 class="sr-only"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Local</h2>
       <div class="row">
         <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359">
@@ -171,20 +174,32 @@
         class="btn btn-success"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>  Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</a></p>
       -->
     </div>
-    <hr>
 
-    <div id="referencias">
+    <div id="referencias" class="content">
+      <hr>
       <h2><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Referências</h2>
-      <p>Recomendado bla bla bla bla</p>
-      <div class="panel panel-default">    
-        <div class="panel-body">
-          Certificado Lorem Ipsum - 2016
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          <p>Tudo Pelo Social é recomendado por outras referências, podemos citar também por vários anos seguidos avaliado como melhor da Veja Porto Alegre na sua categoria. É citado como <u>um dos pratos feitos preferidos pelos leitores do Zero Hora.</u> É até mesmo bem recomendado de forma bem humorada pelo Guia de Sobrevivência Gastronômica de Porto Alegre. </p>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default">    
+            <div class="panel-body lead">
+              <p>Certificado Lorem Ipsum - 2016</p>
+              <p>Lorem</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <p>Tudo Pelo Social é recomendado por outras referências, podemos citar também por vários anos seguidos avaliado como melhor da Veja Porto Alegre na sua categoria. É citado como <u>um dos pratos feitos preferidos pelos leitores do Zero Hora.</u> É até mesmo bem recomendado de forma bem humorada pelo Guia de Sobrevivência Gastronômica de Porto Alegre. </p>
         </div>
       </div>
+      </div>
+      
     </div>
 
     <hr>
-    <div id="avaliacoes">
+    <div id="avaliacoes" class="container content">
       <h2><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Avaliações
         (4,5/5)
       </h2>
@@ -235,9 +250,11 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
       </blockquote>
+      <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
     </div>
-
-    <hr>
 
     <!-- @todo ocultar da primeira versão avaliações; reavaliar  -->
     <!--
