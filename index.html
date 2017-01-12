@@ -8,28 +8,32 @@
   />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    rel="stylesheet" media="screen">
+  rel="stylesheet" media="screen">
   <style>
     /* Força largura máxima da página para algo mais simples de gerenciar enquanto página de espera */
     
-    @media (min-width: 768px) {
-      .container {
-        max-width: 730px;
-      }
+    body {
+      font-style: 'Lato';
+      text-align: center;
+    }
+
+    li {
+      text-align: initial
+    }
+
+    .img-rounded {
+      width: 80%;
     }
     
-    footer {
+    .footer-down {
       border-top: 1px solid #ccc;
       margin-top: 1em;
       padding-top: 2em;
       padding-bottom: 2em;
+      background-color: #333
+
     }
-    /* 
-      @TODO: melhorar responsivo das imagems que usam <img> em vez de usar como CSS background;
-         Veja https://gist.github.com/matthewcrist/3701206
-         Veja https://developer.mozilla.org/pt-BR/docs/Web/CSS/object-fit
-    */
-    
+
     .img-center-tps {
       /*
       max-height: 90%;
@@ -51,55 +55,79 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/Restaurant">
+ <!--  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">TUDO PELO SOCIAL</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+        <li><a href="#menu">Menu</a></li>
+      </ul>
+    </div>
+  </nav> -->
   <header class="container">
     <div class="jumbotron">
-      <h1 itemprop="name">Restaurante<br> Tudo Pelo Social</h1>
+      <div class="page-header">
+        <h1 itemprop="name">Restaurante<br> Tudo Pelo Social</h1>
+      </div>
 
       <p> Fartos pratos de À La Minuta, filé à parmegiana, pizzas e buffet, em amplo
         salão com 330 lugares de casa fundada em 1988.
       </p>
     </div>
-    <div class="bg-info" style="padding: 1.5em"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Aberto de segunda
+    <div class="bg-info lead" style="padding: 1.5em"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Aberto de segunda
       à sábado das 11h até 14h45min e 18h até 23h45min<br> e Domingo das 11h às 15h.
       Alguns feriados, como natal, está fechado.
     </div>
 
   </header>
-  <main class="container">
+  <main class="container-fluid">
     <h2 class="sr-only">Menu</h2>
-    <h3><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Os pratos mais amados</h3>
-    <p>
-      O Tudo pelo Social serve no almoço bufê livre composto por 8 pratos quentes
-        e 12 tipos de saladas. <em>Cardápio completo neste site em breve.</em>
-    </p>
-    <div class="row">
-      <div class="col-sm-4">
-        <h4><em>Alaminuta</em> (o mais pedido!)</h4>
-        <ul>
-          <li>R$ 21,00</li>
-          <li>Arros, 2 ovos, batatas fritas, salada</li>
-          <li>Dica: duas pessoas com fome normal podem dividir esse prato</li>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <h4>Buffet peso livre por pessoa</h4>
-        <ul>
-          <li>R$ 13,00</li>
-          <li>Apenas de segunda a sexta-feira, meio dia (exceto feriado)</li>
-          <li>Inclui sobremesa!</li>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <h4>Á Milanesa com fritas</h4>
-        <ul>
-          <li>R$ 33,00</li>
-        </ul>
-      </div>
 
+    <hr>
+    <div id="pratos-mais-amados">
+      <h2><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Os pratos mais amados</h2>
+      <p>
+        O Tudo pelo Social serve no almoço bufê livre composto por 8 pratos quentes
+        e 12 tipos de saladas. <em>Cardápio completo neste site em breve.</em>
+      </p>
+      <div class="row">
+        <div class="col-sm-2 col-xs-6"><img src="img/buffet.jpg" alt="Alaminuta" class="img-rounded img-responsive"></div>
+        <div class="col-sm-2 col-xs-6">
+          <h4><em>Alaminuta</em> (o mais pedido!)</h4>
+          <ul class="list-unstyled">
+            <li class="lead">R$ 21,00</li>
+            <li>Arros, 2 ovos, batatas fritas, salada</li>
+            <li>Dica: duas pessoas com fome normal podem dividir esse prato</li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-xs-6"><img src="img/buffet.jpg" alt="Buffet peso livre por pessoa" class="img-rounded img-responsive"></div> 
+        <div class="col-sm-2 col-xs-6">
+          <h4>Buffet peso livre por pessoa</h4>
+          <ul class="list-unstyled">
+            <li class="lead">R$ 13,00</li>
+            <li>Apenas de segunda a sexta-feira, meio dia (exceto feriado)</li>
+            <li>Inclui sobremesa!</li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-xs-6"><img src="img/milanesa.jpeg" alt="Buffet peso livre por pessoa" class="img-rounded img-responsive"></div> 
+        <div class="col-sm-2 col-xs-6">
+          <h4>Á Milanesa com fritas</h4>
+          <ul class="list-unstyled">
+            <li class="lead">R$ 33,00</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
 
     <hr>
-    <!--
+    <!-- 
     <div id="cardapio-completo" style="display:none">
       <h3><span class="glyphicon glyphicon-cd" aria-hidden="true"></span> Cardápio completo</h3>
       <p>O Tudo pelo Social serve no almoço bufê livre composto por 8 pratos quentes
@@ -111,75 +139,105 @@
         de uva.
       </p>
       <p><em>Cardápio completo em breve.</em></p>
-    </div>
-    -->
-
-    <!--
-    <a href="tel:5132264405" class="btn btn-success"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Ligue (51) 3226-4405</a>
-    -->
-
-    <!--<p>Ligue (51) 3226-4405 (CTA, botão clicável)</p>-->
-    <div id="local" style="text-align: center">
+    </div> -->
+    <div id="localizacao">
       <h2 class="sr-only"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Local</h2>
+      <div class="row">
+        <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359">
+              <!--
+              <img width="700" height="200" alt="Mapa do restaurante. Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23"
+                src="img/tps-google-maps-local.png" class="img-center-tps" style="">
+              -->
+              <img width="700" height="200" alt="Mapa do restaurante. Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23"
+              src="img/tps-google-maps-local.png" class="img-responsive" style="">
 
-      <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359">
-        <!--
-        <img width="700" height="200" alt="Mapa do restaurante. Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23"
-          src="img/tps-google-maps-local.png" class="img-center-tps" style="">
-        -->
-        <img width="700" height="200" alt="Mapa do restaurante. Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23"
-          src="img/tps-google-maps-local.png" class="img-responsive" style="">
+              <div style="margin-top: 1em">
+                <!--
+                  <span class="btn btn-success" style="white-space: normal;">Use o Google para saber como chegar na <wbr>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
+                -->
+                <div class="col-sm-6 col-xs-6">
+                  <span class="btn btn-primary" style="white-space: normal;">Use o Google para saber como chegar na <br>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                  <a href="tel:5132264405" class="btn btn-primary"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Ligue (51) 3226-4405</a>
+                </div>
+              </div>
 
-        <div style="margin-top: 1em">
-          <!--
-            <span class="btn btn-success" style="white-space: normal;">Use o Google para saber como chegar na <wbr>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
-          -->
-          <span class="btn btn-success" style="white-space: normal;">Use o Google para saber como chegar na <br>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
+            </a>
+          </div>
         </div>
-      </a>
       <!--
       <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359"
         class="btn btn-success"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>  Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</a></p>
       -->
     </div>
     <hr>
-    <h2><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Avaliações
-      (4,5/5)
-    </h2>
 
-    <div class="row">
-      <div class="col-sm-3">
-        <h3>Foursquare</h3>
-        <ul class="list-unstyled">
-          <li>8,6/10</li>
-          <li>1.151+ avaliações</li>
-        </ul>
-        <a class="btn btn-default" href="https://pt.foursquare.com/v/tudo-pelo-social/4b58765bf964a520f75828e3">Avalie</a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Comentários no google</h3>
-        <ul class="list-unstyled">
-          <li>4,5/5</li>
-          <li>433+ avaliações</li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h3>Hagah</h3>
-        <ul class="list-unstyled">
-          <li>4,8/10</li>
-          <li>21+ avaliações</li>
-        </ul>
-        <a class="btn btn-default" href="https://www.hagah.com.br/restaurante-tudo-pelo-social-joao-alfredo-448">Avalie</a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Apontador</h3>
-        <ul class="list-unstyled">
-          <li>5/5</li>
-          <li>32+ avaliações</li>
-        </ul>
-        <a class="btn btn-default" href="http://www.apontador.com.br/local/rs/porto_alegre/restaurantes/A5TJ4K22/tudo_pelo_social.html">Avalie </a>
+    <div id="referencias">
+      <h2><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Referências</h2>
+      <p>Recomendado bla bla bla bla</p>
+      <div class="panel panel-default">    
+        <div class="panel-body">
+          Certificado Lorem Ipsum - 2016
+        </div>
       </div>
     </div>
+
+    <hr>
+    <div id="avaliacoes">
+      <h2><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Avaliações
+        (4,5/5)
+      </h2>
+
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+          <h3>Foursquare</h3>
+          <ul class="list-unstyled">
+            <li>8,6/10</li>
+            <li>1.151+ avaliações</li>
+          </ul>
+          <a class="btn btn-default" href="https://pt.foursquare.com/v/tudo-pelo-social/4b58765bf964a520f75828e3">Avalie</a>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <h3>Hagah</h3>
+          <ul class="list-unstyled">
+            <li>4,8/10</li>
+            <li>21+ avaliações</li>
+          </ul>
+          <a class="btn btn-default" href="https://www.hagah.com.br/restaurante-tudo-pelo-social-joao-alfredo-448">Avalie</a>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <h3>Comentários no google</h3>
+          <ul class="list-unstyled">
+            <li>4,5/5</li>
+            <li>433+ avaliações</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <h3>Apontador</h3>
+          <ul class="list-unstyled">
+            <li>5/5</li>
+            <li>32+ avaliações</li>
+          </ul>
+          <a class="btn btn-default" href="http://www.apontador.com.br/local/rs/porto_alegre/restaurantes/A5TJ4K22/tudo_pelo_social.html">Avalie </a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div id="depoimentos">
+      <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Depoimentos de clientes</h2>
+      <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+      <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+    </div>
+
+    <hr>
 
     <!-- @todo ocultar da primeira versão avaliações; reavaliar  -->
     <!--
@@ -200,7 +258,7 @@
     <!-- @todo por outras avaliacoes -->
   </main>
 
-  <footer class="footer">
+  <footer class="footer-down">
     <div class="container">
       <p class="text-muted">Telefone: <a href="tel:5132264405"><span itemprop="telephone">(51) 3226-4405</span></a></p>
       <p class="text-muted">Localização: <a href="https://www.google.com.br/maps/place/Tudo+Pelo+Social/@-30.0408359,-51.2275038,17z/data=!3m1!4b1!4m5!3m4!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!8m2!3d-30.0408359!4d-51.2253098">Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</a></p>
