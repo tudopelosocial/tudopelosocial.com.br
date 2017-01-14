@@ -85,9 +85,32 @@ body.pagina-inicial, .main-header {
   }
   /* Explicitamente ocultar barra de navegação em telas pequenas na pagina inicial */
   .pagina-inicial > .navbar {
+  /*.pagina-inicial > .navbar-nav-tps-mainitens {*/
     display: none;
   }
   .pagina-cardapio .navbar-nav {
     display: none;
   }
+}
+
+.tps-localizacao-mapa {
+  background: url(../img/tps-google-maps-local-full.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 200px;
+}
+
+.cta-tel-navbar {
+  padding-bottom: .5em !important;
+  padding-top: .5em !important;
+  margin-top: .5em !important;
+  color: #fff !important;
+}
+.cta-tel-navbar:hover, .cta-tel-navbar:focus {
+  background-color: #f0ad4e !important;
+}
+.cta-rota {
+  margin-top: 3em;
 }

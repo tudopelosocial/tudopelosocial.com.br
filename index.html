@@ -18,22 +18,25 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Tudo Pelo Social</a>
       </div>
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-nav-tps-mainitens">
         <li><a href="./cardapio.html">Cardápio</a></li>
         <li><a href="#localizacao">Localização</a></li>
         <li><a href="#referencias">Referências</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#depoimentos" class="hidden-xs hidden-sm">Depoimentos</a></li>
         <li><a href="#avaliacoes">Avaliações</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="tel:5132264405" class="btn btn-warning cta-tel-navbar"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Ligue (51) 3226-4405</a></li>
       </ul>
     </div>
   </nav>
   <header class="container-fluid no-padding">
-      <div class="main-header">
-        <h1 itemprop="name">TUDO PELO SOCIAL</h1>
-         <p> Fartos pratos de À La Minuta, Filé À Parmegiana, Pizzas e Buffet, em amplo
+    <div class="main-header">
+      <h1 itemprop="name">TUDO PELO SOCIAL</h1>
+      <p> Fartos pratos de À La Minuta, Filé À Parmegiana, Pizzas e Buffet, em amplo
         salão com 330 lugares de casa fundada em 1988.
-        </p>
-      </div>
+      </p>
+    </div>
 
     <div class="bg-info lead"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Aberto de segunda
       à sábado das 11h até 14h45min e 18h até 23h45min<br> e Domingo das 11h às 15h.
@@ -41,14 +44,15 @@
     </div>
 
   </header>
-  <main class="container">
+  <main class="">
     <h2 class="sr-only">Menu</h2>
 
-    <div id="pratos-mais-amados" class="content">
-      <h2><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Os pratos mais amados</h2>
+    <div id="pratos-mais-amados" class="container content">
+      <h2><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Os pratos
+        mais amados</h2>
       <p class="lead">
-        O Tudo pelo Social serve no almoço buffet livre composto por 8 pratos quentes
-        e 12 tipos de saladas.<br>
+        O Tudo pelo Social serve no almoço buffet livre composto por 8 pratos quentes e 12
+        tipos de saladas.<br>
         <a class="btn btn-success" style="margin: 2em" href="./cardapio.html">Veja o cardápio completo</a>
       </p>
       <div class="row">
@@ -61,7 +65,7 @@
             <li>Dica: Duas pessoas com fome normal podem dividir esse prato</li>
           </ul>
         </div>
-        <div class="col-sm-2 col-xs-6"><img src="img/buffet.jpg" alt="Buffet peso livre por pessoa" class="img-rounded img-responsive"></div> 
+        <div class="col-sm-2 col-xs-6"><img src="img/buffet.jpg" alt="Buffet peso livre por pessoa" class="img-rounded img-responsive"></div>
         <div class="col-sm-2 col-xs-6">
           <h4>Buffet livre por pessoa</h4>
           <ul class="list-unstyled">
@@ -70,7 +74,7 @@
             <li>Inclui sobremesa!</li>
           </ul>
         </div>
-        <div class="col-sm-2 col-xs-6"><img src="img/milanesa.jpeg" alt="Buffet peso livre por pessoa" class="img-rounded img-responsive"></div> 
+        <div class="col-sm-2 col-xs-6"><img src="img/milanesa.jpeg" alt="Buffet peso livre por pessoa" class="img-rounded img-responsive"></div>
         <div class="col-sm-2 col-xs-6">
           <h4>Á Milanesa com fritas</h4>
           <ul class="list-unstyled">
@@ -80,125 +84,119 @@
 
       </div>
     </div>
-    <!-- 
-    <div id="cardapio-completo" style="display:none">
-      <h3><span class="glyphicon glyphicon-cd" aria-hidden="true"></span> Cardápio completo</h3>
-      <p>O Tudo pelo Social serve no almoço bufê livre composto por 8 pratos quentes
-        e 12 tipos de saladas. O cliente ainda pode optar pela especialidade da casa,
-        a tradicional à la minuta.</p>
-      <p>À noite, serve à la minuta e também à la carte, onde dispõe de opções de pratos
-        preparados com filé e com frango. O Tudo pelo Social tem uma carta de bebidas
-        variada, disponibilizando cervejas, refrigerantes, suco de laranja e suco
-        de uva.
-      </p>
-      <p><em>Cardápio completo em breve.</em></p>
-    </div> -->
-    <div id="localizacao" class="container-fluid content no-padding odd">
-      <h2 class="sr-only"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Local</h2>
-      <div class="row">
-        <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359">
-              <!--
-              <img width="700" height="200" alt="Mapa do restaurante. Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23"
-                src="img/tps-google-maps-local.png" class="img-center-tps" style="">
-              -->
-              <img width="700" height="200" alt="Mapa do restaurante. Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23"
-              src="img/tps-google-maps-local.png" class="img-responsive" style="margin-bottom: 1em">
 
-                <!--
-                  <span class="btn btn-success" style="white-space: normal;">Use o Google para saber como chegar na <wbr>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
-                -->
-                <div class="col-sm-6 col-xs-6">
-                  <span class="btn btn-default" style="white-space: normal;">Use o Google para saber como chegar na <br>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
-                </div>
-                <div class="col-sm-6 col-xs-6">
-                  <a href="tel:5132264405" class="btn btn-default"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Ligue (51) 3226-4405</a>
-                </div>
-            </a>
-          </div>
+    <div id="localizacao">
+      <h2 class="sr-only"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Local</h2>
+
+      <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359">
+        <div class="tps-localizacao-mapa">
+
         </div>
-      <!--
-      <a href="https://www.google.com.br/maps/dir/''/restaurante+tudo+pelo+social/@-30.0408173,-51.29535,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x951978fe42d8b1ed:0xae1c684c4a076aa8!2m2!1d-51.2253098!2d-30.0408359"
-        class="btn btn-success"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>  Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</a></p>
-      -->
+        <span class="btn btn-success cta-rota" style="white-space: normal;">Use o Google para saber como chegar na <br>Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23</span>
+      </a>
     </div>
 
-    <div id="referencias" class="content-fluid no-padding content">
+    <hr >
+
+    <div id="referencias" class="container content-fluid no-padding content">
       <h2><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Referências</h2>
       <div class="row">
         <div class="col-sm-4 col-xs-12">
-          <p><b>TUDO PELO SOCIAL</b> trata-se de um dos endereços mais democráticos de Porto Alegre,  famílias, intelectuais, trabalhadores da região e jovens que forram o estômago antes da balada, frequentam diariamente o restaurante atraídos pelas generosas receitas de filé a preços bem camaradas. Apesar da capacidade do salão, 340 lugares, às vezes o ambiente parece pequeno para acomodar tanta gente. Nos horários de pico, do meio-dia às 14 horas, e das 20h30 às 22 horas, faz parte do programa esperar nas longas filas que se formam em frente à casa. </p>
-          <p><a href="http://ogourmet.net/blog/restaurantes/tudo-pelo-social/">Citação do O Gourmet</a> </p>
+          <p><b>TUDO PELO SOCIAL</b> trata-se de um dos endereços mais democráticos
+            de Porto Alegre, famílias, intelectuais, trabalhadores da região e jovens
+            que forram o estômago antes da balada, frequentam diariamente o restaurante
+            atraídos pelas generosas receitas de filé a preços bem camaradas. Apesar
+            da capacidade do salão, 340 lugares, às vezes o ambiente parece pequeno
+            para acomodar tanta gente. Nos horários de pico, do meio-dia às 14 horas,
+            e das 20h30 às 22 horas, faz parte do programa esperar nas longas filas
+            que se formam em frente à casa. </p>
+          <p><a href="http://ogourmet.net/blog/restaurantes/tudo-pelo-social/">Citação do O Gourmet</a>            </p>
         </div>
         <div class="col-sm-4 col-xs-12">
-          <div class="panel panel-default">    
+          <div class="panel panel-default">
             <div class="panel-body lead">
               <p><b>Certificado de Excelência TripAdvisor</b></p>
-              <p>Concedido a acomodações, atrações e restaurantes que recebem avaliações excelentes dos viajantes com frequência.</p>
+              <p>Concedido a acomodações, atrações e restaurantes que recebem avaliações
+                excelentes dos viajantes com frequência.</p>
             </div>
           </div>
         </div>
         <div class="col-sm-4 col-xs-12">
-          <p>Tudo Pelo Social é recomendado por outras referências, podemos citar também por vários anos seguidos avaliado como melhor da Veja Porto Alegre na sua categoria. É citado como <u>um dos pratos feitos preferidos pelos leitores do Zero Hora.</u> É até mesmo bem recomendado de forma bem humorada pelo Guia de Sobrevivência Gastronômica de Porto Alegre. </p>
+          <p>Tudo Pelo Social é recomendado por outras referências, podemos citar também
+            por vários anos seguidos avaliado como melhor da Veja Porto Alegre na
+            sua categoria. É citado como
+            <u>um dos pratos feitos preferidos pelos leitores do Zero Hora.</u> É até
+            mesmo bem recomendado de forma bem humorada pelo Guia de Sobrevivência
+            Gastronômica de Porto Alegre. </p>
         </div>
       </div>
-      </div>
-      
+    </div>
+
     </div>
     <div id="avaliacoes" class="container-fluid no-padding content odd">
-      <h2><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Avaliações
-        (4,5/5)
-      </h2>
+      <div class="container">
+        <h2><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Avaliações
+          (4,5/5)
+        </h2>
 
-      <div class="row">
-        <div class="col-sm-3 col-xs-6">
-          <h3>Foursquare</h3>
-          <ul class="list-unstyled">
-            <li>8,6/10</li>
-            <li>1.151+ avaliações</li>
-          </ul>
-          <a class="btn btn-default" href="https://pt.foursquare.com/v/tudo-pelo-social/4b58765bf964a520f75828e3">Avalie</a>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <h3>Hagah</h3>
-          <ul class="list-unstyled">
-            <li>4,8/10</li>
-            <li>21+ avaliações</li>
-          </ul>
-          <a class="btn btn-default" href="https://www.hagah.com.br/restaurante-tudo-pelo-social-joao-alfredo-448">Avalie</a>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <h3>Comentários no google</h3>
-          <ul class="list-unstyled">
-            <li>4,5/5</li>
-            <li>433+ avaliações</li>
-          </ul>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <h3>Apontador</h3>
-          <ul class="list-unstyled">
-            <li>5/5</li>
-            <li>32+ avaliações</li>
-          </ul>
-          <a class="btn btn-default" href="http://www.apontador.com.br/local/rs/porto_alegre/restaurantes/A5TJ4K22/tudo_pelo_social.html">Avalie </a>
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <h3>Foursquare</h3>
+            <ul class="list-unstyled">
+              <li>8,6/10</li>
+              <li>1.151+ avaliações</li>
+            </ul>
+            <a class="btn btn-default" href="https://pt.foursquare.com/v/tudo-pelo-social/4b58765bf964a520f75828e3">Avalie</a>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h3>Hagah</h3>
+            <ul class="list-unstyled">
+              <li>4,8/10</li>
+              <li>21+ avaliações</li>
+            </ul>
+            <a class="btn btn-default" href="https://www.hagah.com.br/restaurante-tudo-pelo-social-joao-alfredo-448">Avalie</a>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h3>
+              <!--Comentários no g-->Google</h3>
+            <ul class="list-unstyled">
+              <li>4,5/5</li>
+              <li>433+ avaliações</li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h3>Apontador</h3>
+            <ul class="list-unstyled">
+              <li>5/5</li>
+              <li>32+ avaliações</li>
+            </ul>
+            <a class="btn btn-default" href="http://www.apontador.com.br/local/rs/porto_alegre/restaurantes/A5TJ4K22/tudo_pelo_social.html">Avalie </a>
+          </div>
         </div>
       </div>
     </div>
 
     <div id="depoimentos" class="container-fluid no-padding content">
-      <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Depoimentos de clientes</h2>
-      <blockquote class="blockquote-reverse">
-        <p>Um clássico de Porto Alegre!</p>
-        <footer>Vanessa G. em uma review no <cite title="Source Title">Tripadvisor</cite></footer>
-      </blockquote>
-      <blockquote class="blockquote-reverse">
-        <p>Melhor custo x benefício de a La minuta da cidade, e o parmegiana é sensacional (só serve à noite). O único porém é que tem que querer ficar curtindo o cheiro de gordura por horas e horas :)</p>
-        <footer>Caroline Tissot em uma review no <cite title="Source Title">Foursquare</cite></footer>
-      </blockquote>
-      <blockquote class="blockquote-reverse">
-        <p>O Tudo Pelo Social é um restaurante bom para quem quer economizar e comer muuito. A especialidade da casa é a A La Minuta, que serve duas pessoas e custa 10 reais.
-O filé a parmigiana é excelente!</p>
-        <footer>Rodrigo  em uma review no <cite title="Source Title">Apontador</cite></footer>
-      </blockquote>
+      <div class="container">
+        <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Depoimentos
+          de clientes</h2>
+        <blockquote class="blockquote-reverse">
+          <p>Um clássico de Porto Alegre!</p>
+          <footer>Vanessa G. em uma review no <cite title="Tripadvisor">Tripadvisor</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote-reverse">
+          <p>Melhor custo x benefício de a La minuta da cidade, e o parmegiana é sensacional
+            (só serve à noite). O único porém é que tem que querer ficar curtindo
+            o cheiro de gordura por horas e horas :)</p>
+          <footer>Caroline Tissot em uma review no <cite title="Foursquare">Foursquare</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote-reverse">
+          <p>O Tudo Pelo Social é um restaurante bom para quem quer economizar e comer
+            muuito. A especialidade da casa é a A La Minuta, que serve duas pessoas
+            e custa 10 reais. O filé a parmigiana é excelente!</p>
+          <footer>Rodrigo em uma review no <cite title="Apontador">Apontador</cite></footer>
+        </blockquote>
+      </div>
     </div>
 
     <!-- @todo ocultar da primeira versão avaliações; reavaliar  -->
