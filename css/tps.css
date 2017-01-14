@@ -73,6 +73,10 @@ h1 {
   max-width: 960px;
 }
 
+.img-rounded-tps {
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .main-header {
     margin-top: 18%;
