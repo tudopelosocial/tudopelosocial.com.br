@@ -27,13 +27,11 @@ h1 {
   font-size: 4em;
 }
 
-body {
-  font-style: 'Lato';
-  /* TODO: refatorar para nao centralizar isso tudo
-  text-align: center;
-  */
+.tps-tt2 {
+  margin-bottom: 1.4em;
 }
-body.pagina-inicial, .main-header {
+
+.main-header, .lead, #localizacao {
   text-align: center;
 }
 
