@@ -116,3 +116,6 @@ h1 {
 .cta-rota {
   margin-top: 3em;
 }
+.tps-lista, .tps-lista li{
+  list-style-type: none;
+}
