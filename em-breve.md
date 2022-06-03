@@ -45,7 +45,7 @@ refrigerantes, suco de laranja e suco de uva.
 
 > Ligue (51) 3226-4405 (CTA, botão clicável)
 
-> Local: Rua João Alfredo, 448 - Cidade Baixa, Porto Alegre - RS, 90050-23 (CTA, botão clicável)
+> Local: Rua João Alfredo, 420 - Cidade Baixa, Porto Alegre - RS, 90050-23 (CTA, botão clicável)
 
 ------
 
@@ -63,7 +63,7 @@ refrigerantes, suco de laranja e suco de uva.
 ### Hagah
 - 4,8/10
 - 21+ avaliações
-- Avalie você em https://www.hagah.com.br/restaurante-tudo-pelo-social-joao-alfredo-448
+- Avalie você em https://www.hagah.com.br/restaurante-tudo-pelo-social-joao-alfredo-420
 
 ### Apontador
 - 5/5
